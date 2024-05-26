@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box-design">
+      <div class="design-img">
+        <img src="image/DMDD-1-scaled - Copy.jpg" alt="" />
+      </div>
+      <div class="design-img hidden">
+        <img src="image/DMDD-1-scaled.jpg" alt="" />
+      </div>
+    </div>
+    <div class="box-design">
+      <div class="box">
+        <h1>Only Box design</h1>
+      </div>
+      <div class="box box-shadow">
+        <h1>Box design with shadow and border radius</h1>
+      </div>
+    </div>
+
+    <div class="box-show">
+      <!-- <div class="wrapper">
+        <div class="box1">One</div>
+        <div class="box2">Two</div>
+        <div class="box3">Three</div>
+      </div> -->
+
+
+      <div class="wrapper">
+        <div class="box1">One</div>
+        <div class="box2">Two</div>
+        <div class="box3">
+          Three
+          <div class="abspos">
+            This block is absolutely positioned. In this example the grid area is the
+            containing block and so the absolute positioning offset values are
+            calculated in from the outer edges of the grid area.
+          </div>
+        </div>
+        <div class="box4">Four</div>
+      </div>
+    </div>
+
+    <!-- <iframe
+      src="https://docs.google.com/presentation/d/1IwB4Vj0GzYUCyJ5p9e0pDeXsLiY1nm7Z/edit#slide=id.p1"
+      frameborder="0"
+      width="100%"
+     
+    ></iframe> -->
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const images = document.querySelectorAll(".box-design .design-img");
+
+      images.forEach((img) => {
+        img.addEventListener("click", () => {
+          images.forEach((image) => {
+            if (image !== img) {
+              image.classList.toggle("hidden");
+            }
+          });
+        });
+      });
+    });
+  </script>
+</html>
