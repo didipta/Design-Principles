@@ -81,15 +81,15 @@ img {
 
 /* grid */
 
-.wrapper {
+/* .flexwrapper {
   border: 2px solid #f76707;
   border-radius: 5px;
   background-color: #fff4e6;
   padding: 20px;
 }
 
-.wrapper > div {
-  /* width: 300px; */
+.flexwrapper > div {
+  width: 300px;
   border: 2px solid #ffa94d;
   border-radius: 5px;
   background-color: #ffd8a8;
@@ -98,32 +98,78 @@ img {
   margin-left: 20px;
 }
 
+.flexwrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  min-height: 200px;
+} */
+.wrapper {
+  border: 2px solid #f76707;
+  border-radius: 5px;
+  background-color: #fff4e6;
+  padding: 20px;
+}
+
+.wrapper > div {
+  border: 2px solid #ffa94d;
+  border-radius: 5px;
+  background-color: #ffd8a8;
+  padding: 1em;
+  color: #d9480f;
+  margin-left: 20px;
+}
+.btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.btn {
+  width: 200px;
+  background-color: #f76707;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+}
+.flexwrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  min-height: 200px;
+}
+
 /* one row */
 
-/* .wrapper {
+.gridwrapperone {
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
-} */
+}
 
-/* .wrapper {
+.gridwrappertwo {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-} */
+}
 
-.wrapper {
+/* ............................................... */
+
+.gridwrapperfore {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 200px;
   gap: 20px;
 }
-.box3 {
+.gridwrapperfore .box3 {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 4;
   position: relative;
 }
-.abspos {
+.gridwrapperfore .abspos {
   position: absolute;
   top: 40px;
   left: 40px;
@@ -133,15 +179,17 @@ img {
   padding: 10px;
 }
 
+/* ............................................... */
+
 /* two rows */
 
-/* .wrapper {
+.gridwrapperthree {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   align-items: end;
   grid-auto-rows: 200px;
-} */
+}
 
 .box1 {
   align-self: stretch;
