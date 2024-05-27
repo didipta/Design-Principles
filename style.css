@@ -105,18 +105,18 @@ img {
   min-height: 200px;
 } */
 .wrapper {
-  border: 2px solid #f76707;
+  border: 2px solid #110f0e;
   border-radius: 5px;
   background-color: #fff4e6;
   padding: 20px;
 }
 
 .wrapper > div {
-  border: 2px solid #ffa94d;
+  border: 2px solid #2b2a2f;
   border-radius: 5px;
-  background-color: #ffd8a8;
+  background-color: #323232;
   padding: 1em;
-  color: #d9480f;
+  color: #f4eeec;
   margin-left: 20px;
 }
 .btn-box {
@@ -127,19 +127,20 @@ img {
   margin-bottom: 10px;
 }
 .btn {
-  width: 200px;
-  background-color: #f76707;
+  width: 100%;
+  background-color: #e9efef;
   border: none;
   outline: none;
   padding: 10px 20px;
   border-radius: 5px;
-  color: white;
+  color: rgb(43, 43, 43);
+  font-size: 16px;
+  line-height: 30px;
 }
 .flexwrapper {
   display: flex;
   align-items: flex-end;
   gap: 20px;
-  min-height: 200px;
 }
 
 /* one row */
@@ -189,11 +190,4 @@ img {
   gap: 20px;
   align-items: end;
   grid-auto-rows: 200px;
-}
-
-.box1 {
-  align-self: stretch;
-}
-.box2 {
-  align-self: start;
 }

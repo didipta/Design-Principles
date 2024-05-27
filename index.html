@@ -26,13 +26,160 @@
 
     <div class="box-show">
       <div class="btn-box">
-        <button class="btn">display: flex;</button>
-        <button class="btn"></button>
-        <button class="btn">Show</button>
-        <button class="btn">Show</button>
-        <button class="btn">Show</button>
-        <button class="btn">Show</button>
-        <button class="btn">Show</button>
+        <p class="btn">
+          display: flex;<br />
+          align-items: flex-end;<br />
+          gap: 20px;<br />
+          min-height: 200px;
+        </p>
+      </div>
+      <div class="wrapper flexwrapper">
+        <div class="box1">One</div>
+        <div class="box2">Two</div>
+        <div class="box3">
+          Three
+
+          <div class="abspos">
+            This block is absolutely positioned. In this example the grid area
+            is the containing block and so the absolute positioning offset
+            values are calculated in from the outer edges of the grid area.
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="wrapper">
+        <div class="box1">One</div>
+        <div class="box2">Two</div>
+        <div class="box3">
+          Three
+          <div class="abspos">
+            This block is absolutely positioned. In this example the grid area is the
+            containing block and so the absolute positioning offset values are
+            calculated in from the outer edges of the grid area.
+          </div>
+        </div>
+        <div class="box4">Four</div>
+      </div> -->
+    </div>
+    <div class="box-show">
+      <div class="btn-box">
+        <p class="btn">
+          display: grid;<br />
+          grid-template-columns: repeat(auto-fill, 200px);
+        </p>
+      </div>
+      <div class="wrapper gridwrapperone">
+        <div class="box1">One</div>
+        <div class="box2">Two</div>
+        <div class="box3">
+          Three
+
+          <div class="abspos">
+            This block is absolutely positioned. In this example the grid area
+            is the containing block and so the absolute positioning offset
+            values are calculated in from the outer edges of the grid area.
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="wrapper">
+        <div class="box1">One</div>
+        <div class="box2">Two</div>
+        <div class="box3">
+          Three
+          <div class="abspos">
+            This block is absolutely positioned. In this example the grid area is the
+            containing block and so the absolute positioning offset values are
+            calculated in from the outer edges of the grid area.
+          </div>
+        </div>
+        <div class="box4">Four</div>
+      </div> -->
+    </div>
+    <div class="box-show">
+      <div class="btn-box">
+        <p class="btn">
+          display: grid;<br />
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        </p>
+      </div>
+      <div class="wrapper gridwrappertwo">
+        <div class="box1">One</div>
+        <div class="box2">Two</div>
+        <div class="box3">
+          Three
+
+          <div class="abspos">
+            This block is absolutely positioned. In this example the grid area
+            is the containing block and so the absolute positioning offset
+            values are calculated in from the outer edges of the grid area.
+          </div>
+        </div>
+      </div>
+    <div class="box-show">
+      <div class="btn-box">
+        <p class="btn">
+          display: grid;<br/> 
+          grid-template-columns: repeat(3, 1fr);<br/> 
+          gap: 20px;<br/> 
+          align-items: end;<br/> 
+          grid-auto-rows: 200px;<br/> 
+        </p>
+      </div>
+      <div class="wrapper gridwrapperthree">
+        <div class="box1">One</div>
+        <div class="box2">Two</div>
+        <div class="box3">
+          Three
+
+          <div class="abspos">
+            This block is absolutely positioned. In this example the grid area
+            is the containing block and so the absolute positioning offset
+            values are calculated in from the outer edges of the grid area.
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="wrapper">
+        <div class="box1">One</div>
+        <div class="box2">Two</div>
+        <div class="box3">
+          Three
+          <div class="abspos">
+            This block is absolutely positioned. In this example the grid area is the
+            containing block and so the absolute positioning offset values are
+            calculated in from the outer edges of the grid area.
+          </div>
+        </div>
+        <div class="box4">Four</div>
+      </div> -->
+    </div>
+    <div class="box-show">
+      <div class="btn-box">
+        <p class="btn">
+          .gridwrapper {<br />
+          display: grid;<br />
+          grid-template-columns: repeat(4, 1fr);<br />
+          grid-auto-rows: 200px;<br />
+          gap: 20px;<br />
+          }<br />
+          .gridwrapper .box3 {<br />
+          grid-column-start: 2;<br />
+          grid-column-end: 4;<br />
+          grid-row-start: 1;<br />
+          grid-row-end: 4;<br />
+          position: relative;<br />
+          }<br />
+          .gridwrapper .abspos {<br />
+          position: absolute;<br />
+          top: 40px;<br />
+          left: 40px;<br />
+          background-color: rgb(255 255 255 / 50%);<br />
+          border: 1px solid rgb(0 0 0 / 50%);<br />
+          color: #000;<br />
+          padding: 10px;<br />
+          }
+        </p>
       </div>
       <div class="wrapper gridwrapperfore">
         <div class="box1">One</div>
